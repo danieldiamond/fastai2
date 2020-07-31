@@ -2,11 +2,11 @@
 
 __all__ = ['AccumMetric', 'skm_to_fastai', 'scs_to_fastai', 'optim_metric', 'accuracy', 'error_rate', 'top_k_accuracy',
            'APScoreBinary', 'BalancedAccuracy', 'BrierScore', 'CohenKappa', 'F1Score', 'FBeta', 'HammingLoss',
-           'Jaccard', 'Precision', 'Recall', 'RocAuc', 'RocAucBinary', 'PearsonCorrCoef',
-           'SpearmanCorrCoef', 'Perplexity', 'perplexity', 'accuracy_multi', 'APScoreMulti', 'BrierScoreMulti',
-           'F1ScoreMulti', 'FBetaMulti', 'HammingLossMulti', 'JaccardMulti', 'MatthewsCorrCoefMulti', 'PrecisionMulti',
-           'RecallMulti', 'RocAucMulti', 'mse', 'rmse', 'mae', 'msle', 'exp_rmspe', 'ExplainedVariance', 'R2Score',
-           'foreground_acc', 'Dice', 'JaccardCoeff', 'CorpusBLEUMetric', 'LossMetric', 'LossMetrics']
+           'Jaccard', 'Precision', 'Recall', 'RocAuc', 'RocAucBinary', 'PearsonCorrCoef', 'SpearmanCorrCoef',
+           'Perplexity', 'perplexity', 'accuracy_multi', 'APScoreMulti', 'BrierScoreMulti', 'F1ScoreMulti',
+           'FBetaMulti', 'HammingLossMulti', 'JaccardMulti', 'MatthewsCorrCoefMulti', 'PrecisionMulti', 'RecallMulti',
+           'RocAucMulti', 'mse', 'rmse', 'mae', 'msle', 'exp_rmspe', 'ExplainedVariance', 'R2Score', 'foreground_acc',
+           'Dice', 'JaccardCoeff', 'CorpusBLEUMetric', 'LossMetric', 'LossMetrics']
 
 # Cell
 from .data.all import *
