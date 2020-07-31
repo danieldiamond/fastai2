@@ -2,7 +2,7 @@
 
 __all__ = ['AccumMetric', 'skm_to_fastai', 'scs_to_fastai', 'optim_metric', 'accuracy', 'error_rate', 'top_k_accuracy',
            'APScoreBinary', 'BalancedAccuracy', 'BrierScore', 'CohenKappa', 'F1Score', 'FBeta', 'HammingLoss',
-           'Jaccard', 'Precision', 'Recall', 'RocAuc', 'RocAucBinary', 'MatthewsCorrCoef', 'PearsonCorrCoef',
+           'Jaccard', 'Precision', 'Recall', 'RocAuc', 'RocAucBinary', 'PearsonCorrCoef',
            'SpearmanCorrCoef', 'Perplexity', 'perplexity', 'accuracy_multi', 'APScoreMulti', 'BrierScoreMulti',
            'F1ScoreMulti', 'FBetaMulti', 'HammingLossMulti', 'JaccardMulti', 'MatthewsCorrCoefMulti', 'PrecisionMulti',
            'RecallMulti', 'RocAucMulti', 'mse', 'rmse', 'mae', 'msle', 'exp_rmspe', 'ExplainedVariance', 'R2Score',
@@ -176,11 +176,6 @@ def RocAucBinary(axis=-1, average='macro', sample_weight=None, max_fpr=None, mul
     "Area Under the Receiver Operating Characteristic Curve for single-label binary classification problems"
     return skm_to_fastai(skm.roc_auc_score, axis=axis, activation=ActivationType.BinarySoftmax,
                          average=average, sample_weight=sample_weight, max_fpr=max_fpr, multi_class=multi_class)
-
-# Cell
-def MatthewsCorrCoef(sample_weight=None, **kwargs):
-    "Matthews correlation coefficient for single-label classification problems"
-    return skm_to_fastai(skm.matthews_corrcoef, sample_weight=sample_weight, **kwargs)
 
 # Cell
 @delegates(scs_to_fastai)
